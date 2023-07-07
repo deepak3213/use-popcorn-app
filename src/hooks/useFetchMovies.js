@@ -13,7 +13,7 @@ export function useFetchMovies(query) {
         const res = await fetch(
           `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`
         );
-        console.log(res);
+       
         if (!res.ok) {
           throw new Error("Something went wrong with fetching movies");
         }
